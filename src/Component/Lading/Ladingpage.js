@@ -30,6 +30,7 @@ const LandingPage = () => {
                 <Coverphoto/>
                 <div>
                     <Searchbar setSearchedInput={setSearchedInput}/>
+                    <Datagrid/>
                 </div>
                 <DrawerComponent />
             </div>
