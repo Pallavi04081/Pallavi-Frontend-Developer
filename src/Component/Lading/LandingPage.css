@@ -1,0 +1,168 @@
+*{
+    color:white;
+    font-family:sans-serif
+}
+
+
+
+.CoverContainer{
+    background-image: url("../../../public/coverphoto.jpg");
+    height: 100vh;
+    background-size:  cover;
+    background-position:  center 
+}
+
+#CoverConainerpara{
+    position: absolute;
+    font-size:24px;
+    margin-top: 55vh;
+    color: white;
+    margin-left: 30px
+}
+
+#CoverConainerHeading {
+    position: absolute;
+     font-size: 40px;
+      margin-top: 60vh;
+       color: white;
+        margin-Left: 30px;
+         font-weight: bold
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%
+}
+
+.card{
+    margin:10px;
+    border:none;
+    margin-bottom:20px
+}
+
+.card-body{
+    background-color:black;
+    padding:5px;
+    border:none;
+    border-color:black;
+    display:grid;
+    grid-template-rows:60% auto auto
+}
+
+.card-img-top{
+    height:100%;
+    border-radius:7px
+}
+
+.card-title{
+    color:white;
+    width:100%;
+    font-family:sans-serif;
+    font-size:3.4vh;
+    text-align:center;
+    margin-top:10px;
+}
+
+.card-title:hover{
+   color: blue;
+}
+
+
+.Popup-card-body{
+    background-image: url("../../../public/coverphoto2.jpg");
+    height: 90vh;
+     background-size: cover;
+      background-Position: center
+}
+
+.Popup-card-Conainer {
+    display:grid;
+   grid-template-columns: 60% 40%;
+}
+
+.Popup-card-title{
+    font-size:5vh;
+    padding:10px
+}
+
+.Popup-card-caontaint {
+    font-size:14px;
+    margin-bottom:5px;
+    margin-top:0px;
+    margin-left: 10px;
+}
+
+.imageConainer{
+    float:right;
+    margin-top: 10px;
+}
+
+.card-text{
+    color:white;
+    font-size:10px;
+   text-align: right;
+   margin: 10px 10px 0px 0px;
+}
+
+.imageContainerimg {
+    width:100%;
+    height:40vh;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.PopupConainerDescription{
+    font-size:14px;
+    margin-top:15px;
+    padding-right: 10px;
+    display: inline;
+}
+
+.closeicon{
+    position:absolute;
+    top:90%;
+    left:90%;
+    color: red;
+}
+
+.liComponent{
+    border-bottom:1px solid;
+    border-color: bisque;
+    margin-bottom:20px;
+    text-align:right;
+    margin-right:10px;
+    font-size:14px
+}
+
+.RocketsandCapsulesHeadingContainer{
+    display:grid;
+    grid-template-columns:auto auto;
+    margin:15px 15px
+}
+
+
+
+@media screen and (max-width:900px){
+    
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 50% 50%
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 100%
+    }
+
+
+    #CoverConainerpara{
+          margin-top: 55vh;
+    }
+
+    .closeicon{
+        margin-right: 10px;
+    }
+}

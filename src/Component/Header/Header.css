@@ -1,0 +1,65 @@
+
+.HeaderContainer{
+    color:white;
+    display:grid;
+    grid-template-columns:20% auto auto;
+    position:sticky
+}
+
+span{
+    width: 100%;
+    margin-left:20px;
+    font-weight:bolder;
+    margin-top: 15px;
+}
+
+span:hover{
+    border-bottom: 1px solid;
+}
+
+.logoimageContainer{
+    width: 100%;
+}
+
+.logoimage{
+    width: 250px;
+    padding-left: 30px;
+}
+
+.spanConainer{
+    margin-top:55px;
+    font-size:12px;
+    font-family:sans-serif
+}
+
+.headerIcon{
+    margin-left:auto;
+    margin-right:10px;
+}
+
+@media screen and (max-width:1200px) {
+    .spanConainer{
+        display: none;
+    }
+    span{
+        display: none;
+    }
+ 
+
+    
+.HeaderContainer{
+    color:white;
+    display:grid;
+    grid-template-columns: 90% 10%;
+}
+
+.logoimageContainer{
+    width: 0%;
+}
+
+.logoimage{
+    margin: auto;
+}
+
+}
+
