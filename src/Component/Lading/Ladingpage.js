@@ -31,6 +31,7 @@ const LandingPage = () => {
                 <div>
                     <Searchbar setSearchedInput={setSearchedInput}/>
                 </div>
+                <DrawerComponent />
             </div>
         </>
     )
