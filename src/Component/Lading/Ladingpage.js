@@ -11,22 +11,12 @@ import "./LandingPage.css"
 
 
 const LandingPage = () => {
- const {RocketData,setRocketData}  = useContext(userData)
-  const[searchedInput,setSearchedInput] = useState("")
- 
-  
-   useEffect(()=>{
-        const getRocketData = async()=>{
-            const Responce = await axios.get(`https://api.spacexdata.com/v3/rockets/${searchedInput}`)
-            Array.isArray(Responce.data)?setRocketData(Responce.data):setRocketData([Responce.data])
-        }
-        getRocketData();
-   },[searchedInput])
 
     return (
         <> 
             <div> 
                 <Header/>
+                <Coverphoto/>
             </div>
         </>
     )
